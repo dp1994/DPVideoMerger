@@ -10,8 +10,12 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)btnMergeVideosAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UICollectionView *videoImgCV;
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+- (IBAction)btnMergeVideosAction:(id)sender;
+- (IBAction)btnGridMergeVideosAction:(UIButton *)sender;
 
 @end
 
